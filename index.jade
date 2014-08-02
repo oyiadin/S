@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    ul#posts-list
+        for post in posts
+            li
+                a(href=post.url)
+                    span.date= post.date.format('%Y-%m-%d')
+                    post.title

@@ -1,0 +1,24 @@
+mixin cache_header()
+    p
+        a(href="/", title=site.raw_content)= site.configs.site_name or site.configs.title
+    p
+        if has('posts')
+            a(href='/archive') 归档
+            |  / 
+        if has('images')
+            a(href='/album') 相册
+            |  / 
+        if has('about.md') or has('about.txt')
+            a(href='/about') 关于
+            |  / 
+        a(href="/feed") 订阅
+
+mixin cache_footer()
+    p
+        | Designed by
+        a(href='http://oyiadin.com/') Chen Xiaoyuan
+        if site.configs.author
+            |  / Wrote by
+            a(href='/')= site.configs.author
+        |  / Powered by
+        a(href='http://farbox.com/') FarBox

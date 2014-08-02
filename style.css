@@ -1,0 +1,64 @@
+@media (max-width: 700px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+#header, article, #footer {
+    width: 90%;
+    max-width: 720px;
+    margin: 2em auto;
+    text-align: center;
+}
+#header p {
+    cursor: default;
+    color: #333;
+}
+#header a {
+    border: none;
+}
+article {
+    text-align: left;
+    margin: 0 auto;
+}
+article > * {
+    line-height: 1.6em;
+}
+#posts-list > li {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+#posts-list > li > a {
+    border: none;
+}
+#post-informations {
+    color: #333;
+    font-style: italic;
+    font-size: 0.7em;
+    margin-top: 0.3em;
+}
+.date {
+    margin-right: 3px;
+    font-style: italic;
+}
+.date:after {
+    content: " ";
+}
+#eof {
+    text-align: center;
+    font-style: italic;
+    line-height: 3em;
+}
+#footer {
+    margin-top: 1.5em;
+    margin-bottom: 1.2em;
+}
+#footer p {
+    font-size: 0.7em;
+    color: gray;
+    line-height: 1em;
+    text-shadow: 0 0 15px #BBB;
+}
+#footer a {
+    border: none;
+}

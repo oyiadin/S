@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    color: #3f4444;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    transition-duration: .15s;
+}
+a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+}
+b, strong, em {
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: black;
+}
+blockquote {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em 0;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    background-color: #DDD;
+}
+button, input[type=submit] {
+    box-sizing: border-box;
+    width: auto;
+    height: 1.6em;
+    padding: 0 13px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+button:hover, input[type=submit] {
+    background-color: black;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 2.5em;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    color: black;
+}
+h1 {
+    font-size: 5em; /* 逼使用者不在文章中加一级标题——这是一个好习惯 */
+}
+h1#post-title {
+    font-size: 2.2em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font=size: 1.6em;
+}
+h4 {
+    font-size: 1.3em;
+}
+h5, h6 {
+    font-size: 1em;
+}
+hr {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border: none;
+    color: #AAA;
+    text-align: center;
+}
+hr:before {
+    content: "- - -";
+}
+img {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+input[type=submit] {
+    min-width: 30%;
+}
+ul li {
+    list-style-type: square;
+}
+ol, ul {
+    margin-top: 1em;
+    margin-botom: 1em;
+    padding: 0;
+    padding-left: 20px;
+}
+p {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+table, tr, th, td {
+    border: none;
+}
+table {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+tr {
+    border-bottom: 1px solid black;
+}
+tr:last-child {
+    border-bottom: none !important;
+}
+tr > th:last-child, tr > td:last-child {
+    border-right: none !important;
+}
+th {
+    font-weight: bold;
+    color: black;
+}
+th, td {
+    border-right: 1px solid gray;
+}
