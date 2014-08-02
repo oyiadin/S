@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    entries = posts.group('tags')
+    for posts_in_tag in entries
+        h2= posts_in_tag[0]
+        ul#posts-list
+            for post in posts_in_tag[1]
+                li
+                    span(id="tag_{{ posts_in_tag[0] }}")
+                    a(href=post.url)
+                        span.date= post.date.format('%Y-%m-%d')
+                        post.title

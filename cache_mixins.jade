@@ -5,6 +5,9 @@ mixin cache_header()
         if has('posts')
             a(href='/archive') 归档
             |  /
+        if site.tags
+            a(href='/tags') 标签云
+            |  /
         if has('images')
             a(href='/album') 相册
             |  /
