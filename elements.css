@@ -17,16 +17,12 @@ a:hover {
 }
 b, strong, em {
     display: inline-block;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding: 0 2px;
     color: black;
 }
 blockquote {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    padding: 2em 0;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;
+    margin: 2em 0;
+    padding: 2em 2.5em;;
     background-color: #DDD;
 }
 button, input[type=submit] {
@@ -43,9 +39,9 @@ button:hover, input[type=submit] {
     color: white;
 }
 h1, h2, h3, h4, h5, h6 {
-    line-height: 2.5em;
-    margin-top: 0;
-    margin-bottom: 0.8em;
+    line-height: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
     color: black;
 }
 h1 {
@@ -55,7 +51,7 @@ h1#post-title {
     font-size: 2.2em;
 }
 h2 {
-    font-size: 2em;
+    font-size: 1.9em;
 }
 h3 {
     font=size: 1.6em;
@@ -70,32 +66,37 @@ hr {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     border: none;
-    color: #AAA;
+    color: #BBB;
     text-align: center;
 }
 hr:before {
     content: "- - -";
 }
 img {
-    display: inline-block;
+    display: block;
     width: auto;
-    text-align: center;
+    margin: 1.2em auto;
 }
 input[type=submit] {
     min-width: 30%;
 }
 ul li {
     list-style-type: square;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
 }
 ol, ul {
     margin-top: 1em;
-    margin-botom: 1em;
+    margin-bottom: 1em;
     padding: 0;
-    padding-left: 20px;
+    padding-left: 0;
+}
+ul ul, ul ol, ol ul, ol ol {
+    margin: 0;
+    padding-left: 40px;
 }
 p {
-    margin-top: 0.4em;
-    margin-bottom: 0.4em;
+    margin: 0.4em 0;
 }
 table, tr, th, td {
     border: none;
@@ -107,7 +108,7 @@ table {
 tr {
     border-bottom: 1px solid black;
 }
-tr:last-child {
+table tr:last-child {
     border-bottom: none !important;
 }
 tr > th:last-child, tr > td:last-child {
