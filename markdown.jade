@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1#post-title= post.title
+
+    div#post-body= post.content
+
+    p#post-informations 本文发布于 {{ post.date.format("%Y-%m-%d") }}，最后修改于 {{ post.raw_date.format("%Y-%m-%d") }}。
+
+    p#eof(title="End Of File") - EOF -
