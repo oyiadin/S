@@ -11,9 +11,10 @@ mixin cache_header()
         if has('images')
             a(href='/album') 相册
             |  /
-        if has('about.md') or has('about.txt')
-            a(href='/about.md') 关于
-            |  /
+        for file in ['about.txt', 'about.md', 'about.mk', 'about.markdown']
+            if has(file)
+                a(href='/about.md') 关于
+                |  /
         a(href="/feed") 订阅
 
 mixin cache_footer()

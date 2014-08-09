@@ -1,6 +1,12 @@
 extends layout
 
 block content
+    if request.args.s
+        if posts
+            p 以下是搜索结果：
+        else
+            p 没有找到与指定内容相关的文章 :(
+
     ul#posts-list
         for post in posts
             li
