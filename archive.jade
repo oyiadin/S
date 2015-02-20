@@ -3,7 +3,7 @@ extends layout
 block content
     entries = posts.group('date:year')
     for posts_in_year in entries
-        h2= posts_in_year[0]
+        h2(style="text-align:center")= posts_in_year[0]
 
         ul#posts-list
             for post in posts_in_year[1]

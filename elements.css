@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 1.46em;
-    color: #3f4444;
+    font-size: 1.25em;
+    color: #333;
 }
 a {
     color: inherit;
@@ -40,8 +40,8 @@ button:hover, input[type=submit] {
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2em;
-    margin-top: 1em;
-    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
     color: black;
 }
 h1 {
@@ -88,15 +88,23 @@ ul li {
 ol, ul {
     margin-top: 1em;
     margin-bottom: 1em;
-    padding: 0;
-    padding-left: 0;
+    padding: 0 0 0 40px;
 }
 ul ul, ul ol, ol ul, ol ol {
     margin: 0;
-    padding-left: 40px;
 }
 p {
     margin: 0.4em 0;
+}
+code {
+    display: inline-block;
+    border: 1px #DDD solid;
+    padding: 0 4px;
+    border-radius: 7px;
+    color: #A60;
+    text-shadow: 1px 1px 1px #CA7;
+    position: relative;
+    top: -1px;
 }
 table, tr, th, td {
     border: none;

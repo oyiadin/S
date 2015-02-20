@@ -1,5 +1,5 @@
 mixin cache_header()
-    p
+    p#site-title
         a(href="/", title=site.raw_content)= site.configs.site_name or site.configs.title
     p
         if has('posts')
@@ -13,16 +13,16 @@ mixin cache_header()
             |  /
         for file in ['about.txt', 'about.md', 'about.mk', 'about.markdown']
             if has(file)
-                a(href='/about.md') 关于
+                a(href='/' + file) 关于
                 |  /
         a(href="/feed") 订阅
 
 mixin cache_footer()
     p
-        | Designed by
-        a(href='http://oyiadin.com/') Chen Xiaoyuan
+        | 主题作者:
+        a(href='http://oyiadin.farbox.com/') oyiadin
         if site.configs.author
-            |  / Written by
+            |  / 网站作者:
             a(href='/')= site.configs.author
-        |  / Powered by
-        a(href='http://farbox.com/') FarBox
+        br
+        a(href='http://farbox.com/') 搭载于 FarBox.com
