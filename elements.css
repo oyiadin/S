@@ -1,8 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 1.25em;
+    font-size: 1.16em;
+    font-family: FangSong, STFangSong;
     color: #333;
+    background-color: #F8F8F8;
+    text-shadow: 0 0 1px #DDD; /* 自己这边仿宋看起来似乎有点细，用这个改善一下 */
+}
+::selection {
+    background: #CCC;
+    color: black;
 }
 a {
     color: inherit;
@@ -22,9 +29,10 @@ b, strong, em {
 }
 blockquote {
     margin: 2em 0;
-    padding: 2em 2.5em;;
+    padding: 2em 2em;;
     background-color: #DFDFDF;
 }
+/*
 button, input[type=submit] {
     box-sizing: border-box;
     width: auto;
@@ -38,6 +46,7 @@ button:hover, input[type=submit] {
     background-color: black;
     color: white;
 }
+*/
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2em;
     margin-top: 0.5em;
@@ -46,9 +55,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     font-size: 5em; /* 逼使用者不在文章中加一级标题——这是一个好习惯 */
-}
-h1#post-title {
-    font-size: 2.2em;
 }
 h2 {
     font-size: 1.9em;
@@ -63,8 +69,8 @@ h5, h6 {
     font-size: 1em;
 }
 hr {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    font-size: 0.8em;
+    margin: 2.2em 0;
     border: none;
     color: #BBB;
     text-align: center;
@@ -77,9 +83,11 @@ img {
     width: auto;
     margin: 1.2em auto;
 }
+/*
 input[type=submit] {
     min-width: 8%;
 }
+*/
 ul li {
     list-style-type: square;
     margin-top: 0.1em;
@@ -88,24 +96,26 @@ ul li {
 ol, ul {
     margin-top: 1em;
     margin-bottom: 1em;
-    padding: 0 0 0 40px;
+    padding: 0 0 0 42px;
 }
 ul ul, ul ol, ol ul, ol ol {
     margin: 0;
 }
 p {
-    margin: 0.4em 0;
+    margin: 0.5em 0;
 }
 code {
     display: inline-block;
     border: 1px #DDD solid;
-    padding: 0 4px;
+    padding: 0 5px;
+    margin: 0 2px;
     border-radius: 7px;
     color: #A60;
     text-shadow: 1px 1px 1px #CA7;
     position: relative;
     top: -1px;
 }
+/*
 table, tr, th, td {
     border: none;
 }
@@ -129,3 +139,4 @@ th {
 th, td {
     border-right: 1px solid gray;
 }
+*/

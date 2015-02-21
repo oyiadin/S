@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    entries = posts.group('date:year')
+    entries = posts.group('-date:year')
     for posts_in_year in entries
         h2(style="text-align:center")= posts_in_year[0]
 

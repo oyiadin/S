@@ -1,6 +1,6 @@
 #header, article, #footer {
     width: 90%;
-    max-width: 780px;
+    max-width: 860px;
     margin: 2.5em auto;
     text-align: center;
 }
@@ -18,7 +18,7 @@ article {
     margin: 0 auto;
 }
 article > * {
-    line-height: 1.6em;
+    line-height: 2em;
 }
 #site-title {
     font-size: 1.5em;
@@ -33,7 +33,7 @@ ul#posts-list > li > a {
 h1#post-title {
     text-align: center;
     margin-bottom: 0;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 hr#post-begin-hr:before {
     content: "*";
@@ -54,6 +54,7 @@ hr#post-begin-hr:before {
 #eof {
     text-align: center;
     font-style: italic;
+    font-family: monospace;
     line-height: 5em;
     color: gray;
 }
@@ -65,19 +66,23 @@ hr#post-begin-hr:before {
     font-size: 0.7em;
     color: gray;
     line-height: 1.5em;
-    text-shadow: 0 0 15px #BBB;
+    text-shadow: 0 0 12px gray;
 }
 #footer a {
     border: none;
 }
 
-@media (max-width: 820px) {
-    body {
-        font-size: 1.15em;
-    }
+@media (max-width: 920px) {
+    body { font-size: 1.13em !important; }
 }
-@media (max-width: 640px) {
-    body {
-        font-size: 1.05em;
-    }
+@media (max-width: 800px) {
+    body { font-size: 1.09em !important; }
+}
+@media (max-width: 700px) {
+    body { font-size: 1.05em !important; }
+    article > * { line-height: 1.91em !important; }
+}
+@media (max-width: 620px) {
+    body { font-size: 1em !important; }
+    article > * { line-height: 1.8em !important; }
 }
